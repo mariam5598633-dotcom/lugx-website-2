@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website gaming</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Updated (لحل مشكلة اختفاء الأيقونات) -->
+   <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav style="display: flex !important; flex-direction: row !important; justify-content: space-between !important; align-items: center !important; flex-direction: row !important; width: 100% !important; padding: 20px 40px; background-color: #1e1e1e; box-sizing: border-box;">
+        <div>
+            <a href="index.html">
+            <img src="./lugx.jpeg" alt="LUGX Gaming Logo" style="height: 45px; width: auto; display: block;">
+            </a>
+        </div>
+        
+        <!-- الأيقونة دي هتظهر دلوقتي بعد تحديث الرابط -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <ul style="display: flex !important; flex-direction: row !important; align-items: center !important; list-style: none !important; gap: 30px !important; margin: 0 !important; padding: 0 !important;" > <!-- ضيف الـ id ده هنا -->
+    <li style="display: block !important;"><a href="#" style="color: #ffffff; text-decoration: none; font-size: 16px;">Home</a></li>
+    <li style="display: block !important;"><a href="#" style="color: #ffffff; text-decoration: none; font-size: 16px;">Our Shop</a></li>
+    <li style="display: block !important;"><a href="#" style="color: #ffffff; text-decoration: none; font-size: 16px;">Product Details</a></li>
+    <li style="display: block !important;"><a href="#" style="background-color: #ee626b; color:#ffffff; padding: 10px 25px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block;">SIGN IN</a></li>
+</ul>
+    
+    </nav>
+
+<div id="home-page">
+
+        <!-- Hero -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+           
+            <h4>WELCOME TO LUGX</h4>
+
+            <h1>Your Ultimate Gaming Destination!</h1>
+            
+            <p>
+               
+            LUGX Gaming — your go-to platform for discovering top-rated games,
+            exploring new releases, and staying ahead in the gaming world. Join
+            millions of gamers who trust LUGX for the best experience.
+          
+            </p>
+               
+            <div class="data-search">
+               <input type="text" id="gameInput" placeholder="Search for a game">
+               <button id="searchBtn">SEARCH NOW</button>
+            </div>
+ 
+        </div>
+ 
+    
+        
+             <!-- صورة البطل  -->
+        <div class="hero-image">
+            <img src="./apex.jpeg"
+             alt="gaming">
+        </div>
+
+    </section>
+
+    <!-- Trending Games -->
+
+    <section id="trending" class="trending">
+
+        <div class="section-header">
+          <div class="title-text">
+            <span class="orange-text" style="color: rgb(255, 122, 61);">🔥 HOT RIGHT NOW</span>
+
+            <h2 style="display: block;
+                       font-size: 2em;
+                       margin-block-start: 0.67em;
+                       margin-block-end: 0.67em;
+                       margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                       font-weight: bold;
+                       unicode-bidi: isolate;">Trending Games</h2>
+          </div>
+
+            <a href="#" class="view-all-btn">VIEW ALL</a>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="./Assassin’s Creed.jpeg"
+                    alt="">
+
+                <div class="card-content">
+                   <P>Action / RPG</P>
+                   <h3>Assassin’s Creed II</h3>
+                </div>
+                <button class="buy-btn">
+                    Buy Now
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="./rust.jpeg"
+                    alt="">
+
+                <div class="card-content">
+                    <p>Survival / Sandbox</p>
+                    <h3>Rust</h3>
+                </div>
+                <button class="buy-btn">
+                    Buy Now
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Most Played Section -->
+
+<section class="most-played" style="margin: 100px 200px 200px 70px;">
+    <div class="top-section">
+        <div>
+            <h4>TOP GAMES</h4>
+            <h2>Most Played</h2>
+        </div>
+        <button class="view-btn" id="openPopup">
+             VIEW ALL
+        </button>
+    </div>
+
+    <div class="played-cards">
+        <!-- Card 1 -->
+        <div class="played-card">
+            <img src="./the sims 4.jpeg"
+                alt="">
+
+            <p>Life Simulation</p>
+            <h3>The Sims 4</h3>
+            <button>EXPLORE</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="played-card">
+            <img src="./pubg.jpeg"
+                alt="">
+            <p>Battle Royale / Shooter</p>
+            <h3>PUBG: Battlegrounds</h3>
+            <button>EXPLORE</button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="played-card">
+            <img src="./apex.jpeg"
+                alt="">
+
+            <p>Battle Royale / Shooter</p>
+            <h3>Apex Legends</h3>
+            <button>EXPLORE</button>
+        </div>
+
+
+        <!-- Card 6 -->
+        <div class="played-card">
+            <img src="./destiny 2.jpeg"
+                alt="">
+            <p>Action / Sci-Fi Fps</p>
+            <h3>Destiny 2</h3>
+            <button>EXPLORE</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- قسم التصنيفات المميزة -->
+<section id="categories" class="top-categories">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">TOP GAMES</span>
+            <h2>Top Categories</h2>
+        </div>
+
+        <div class="categories-grid">
+            <!-- تصنيف Tower Of Fantasy -->
+            <div class="category-item">
+                <div class="cat-header">Sci-Fi</div>
+                <div class="cat-thumb">
+                    <img src="./tower of fantasy.jpeg">
+                </div>
+            </div>
+
+            <!-- تصنيف RPG -->
+            <div class="category-item">
+                <div class="cat-header">RPG</div>
+                <div class="cat-thumb">
+                    <img src="./lostark.jpeg">
+                </div>
+            </div>
+
+            <!-- تصنيف brawlhalla -->
+            <div class="category-item">
+                <div class="cat-header">Fighting</div>
+                <div class="cat-thumb">
+                    <img src="./brawlhalla.jpeg">
+                </div>
+            </div>
+
+            <!-- تصنيف Warframe -->
+            <div class="category-item">
+                <div class="cat-header">ActionS</div>
+                <div class="cat-thumb">
+                    <img src="./warframe.jpeg">
+                </div>
+            </div>
+
+            <!-- تصنيف Strategy -->
+            <div class="category-item">
+                <div class="cat-header">Strategy</div>
+                <div class="cat-thumb">
+                    <img src="./dota 2.jpeg" alt="Strategy Games">
+                </div>
+            </div>
+        </div>
+    <!-- قسم نموذج الاتصال الجديد بالكامل -->
+<section class="unique-contact-section">
+    <div class="unique-contact-card">
+        <h2 class="unique-contact-title">contact us</h2>
+        <form class="unique-contact-form">
+            <div class="unique-input-group"><input type="text" placeholder="Your Name" required></div>
+            <div class="unique-input-group"><input type="email" placeholder="Your Email" required></div>
+            <div class="unique-input-group"><textarea placeholder="Your Message" required></textarea></div>
+            <button type="submit" class="unique-send-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+<script src="script.js"></script>
+  <!-- قسم حقوق النشر والتأليف أسفل الصفحة -->
+<footer class="unique-footer">
+    <p>copyright © 2026 LUGX Gaming Company. All rights reserved.</p>
+</footer>
+</body>
+</html>

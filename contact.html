@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>website gaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+       <img src="logo.png" alt="Logo">
+    </div>
+      <div class="hamburger" id="hamburger">
+           <i class="fas fa-bars"></i>
+       </div>
+
+    <ul class="nav-links" id="nav-links">
+        <!-- خليه يرجع لملف الـ index -->
+        <li><a href="index.html">Home</a></li> 
+        <li><a href="index.html#trending">Our Shop</a></li>
+        <li><a href="index.html#categories">Product Details</a></li>
+        <!-- خليه يفتح الملف الجديد -->
+        <li><a href="contact.html">Contact Us</a></li> 
+    </ul>
+    <a href="#" class="sign-in">Sign In</a>
+</nav>
+
+    <!-- قسم نموذج التواصل-->
+<div id="contact-page">
+    <!-- الجزء العلوي لصفحة التواصل -->
+<section class="contact-header">
+    <div class="container">
+        <h1>Get In Touch</h1>
+        <p>Have a question or feedback? We'd love to hear from you.</p>
+    </div>
+</section>
+
+<!-- هنا يوضع الفورم الذي صممناه  -->
+<section class="contact-section">
+        <div class="container">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form">
+                <label for="contactName">Name</label>
+                <input type="text" placeholder="Your Full Name">
+                <label for="contactEmail">Email</label>
+                <input type="email" placeholder="Your@email.com">
+                <label for="contactAge">Age</label>
+                <input type="number" id="contactAge" placeholder="Your age" min="1" max="120">
+                <label for="contactMsg">Message</label>
+                <textarea placeholder="Write Your Message...."></textarea>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+</section>
+
+</div>
+
+      <!-- Footer -->
+    <footer>
+        copyright © 2026 LUGX Gaming Company. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
