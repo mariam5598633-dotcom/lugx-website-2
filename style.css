@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* مسافة لتعويض ارتفاع الناف بار الثابت */
+    scroll-padding-top: 80px; 
 }
 
 
@@ -17,25 +17,24 @@ body{
     overflow-x:hidden;
 }
 
-/* للشاشات المتوسطة (Tablets) واللاب توب الصغير */
+
 @media screen and (max-width: 992px) {
     .container {
-        width: 90%; /* تقليل الهوامش الجانبية */
+        width: 90%; 
     }
     .navbar .nav-links {
-        gap: 15px; /* تصغير المسافات بين الروابط */
+        gap: 15px; 
     }
 }
 
-/* للشاشات الصغيرة (الموبايل - أقل من 768px) */
+
 @media screen and (max-width: 768px) {
-    /* 1. الناف بار: تحويل الروابط لقائمة عمودية أو إخفائها */
     .navbar {
         flex-direction: column;
         padding: 15px;
     }
     .nav-links {
-        display: none; /* ممكن تظهرها لما تدوس على زرار المنيو */
+        display: none; 
         flex-direction: column;
         width: 100%;
         text-align: center;
@@ -45,12 +44,11 @@ body{
         margin: 10px 0;
     }
 
-    /* 2. الهيرو سكشن (الجزء العلوي) */
     .header-content h1 {
-        font-size: 28px; /* تصغير حجم العنوان */
+        font-size: 28px; 
     }
     .data-search {
-        flex-direction: column; /* البحث والزرار تحت بعض */
+        flex-direction: column; 
         width: 100%;
     }
     .data-search input {
@@ -58,10 +56,10 @@ body{
         margin-bottom: 10px;
     }
 
-    /* 3. كروت الألعاب (Grid/Flex) */
+    
     .trending-games, .cards-container {
         display: grid;
-        grid-template-columns: 1fr; /* كارت واحد في كل سطر */
+        grid-template-columns: 1fr; 
         gap: 20px;
     }
     .card {
@@ -69,7 +67,6 @@ body{
         width: 100%;
     }
 
-    /* 4. قسم الـ Newsletter */
     .newsletter-box {
         flex-direction: column;
     }
@@ -78,7 +75,6 @@ body{
     }
 }
 
-/* Navbar */
 
 .navbar{
     width:100%;
@@ -110,61 +106,55 @@ body{
     list-style:none;
 }
 
-/* تنسيق الروابط العادية في الناف بار */
 .nav-links li a {
     color: white;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    padding: 8px 18px; /* مساحة داخلية تسمح بظهور الإطار بوضوح */
-    border-radius: 20px; /* لجعل الإطار دائري الأطراف */
-    border: 2px solid transparent; /* إطار شفاف مخفي في الحالة العادية لمنع الاهتزاز */
-    transition: all 0.3s ease; /* حركة ناعمة لظهور الإطار */
+    padding: 8px 18px; 
+    border-radius: 20px; 
+    border: 2px solid transparent; 
+    transition: all 0.3s ease; 
 }
 
-/* التأثير المطلوب عند وقوف الماوس (Hover) */
 .nav-links li a:hover {
     color: white;
-    border: 2px solid #f3603b; /* إظهار الإطار باللون البرتقالي */
-    background-color: rgba(243, 96, 59, 0.1); /* إضافة خلفية شفافة جداً لجمالية أكثر */
+    border: 2px solid #f3603b; 
+    background-color: rgba(243, 96, 59, 0.1); 
 }
 
-/* الحفاظ على العنصر النشط (Active) بشكل مختلف إذا أردت */
+
 .nav-links li a.active {
     background-color: #5a36e8;
     border: 2px solid #5a36e8;
     color: white;
 }
 
-/* زرار تسجيل الدخول */
 .sign-in {
-    background-color: #f3603b; /* اللون البرتقالي المشرق للموقع */
-    color: white !important;   /* لون النص أبيض */
-    padding: 12px 30px;        /* مساحة داخلية ليعطي حجماً مناسباً */
-    border-radius: 25px;       /* جعل الحواف دائرية تماماً */
-    text-decoration: none;     /* إزالة الخط تحت النص */
-    font-weight: 600;          /* جعل الخط سميكاً قليلاً */
-    font-size: 14px;           /* حجم الخط المناسب */
-    text-transform: uppercase; /* جعل الحروف كبيرة (Capital) */
-    transition: all 0.3s ease; /* حركة ناعمة عند التمرير بالماوس */
-    border: none;              /* إزالة أي إطار افتراضي */
+    background-color: #f3603b; 
+    color: white !important;   
+    padding: 12px 30px;        
+    border-radius: 25px;       
+    text-decoration: none;    
+    font-weight: 600;          
+    font-size: 14px;           
+    text-transform: uppercase; 
+    transition: all 0.3s ease; 
+    border: none;              
     display: inline-block;
 }
 
-/* تأثير عند مرور الماوس على الزر */
 .sign-in:hover {
-    background-color: #ee626b; /* تغيير اللون لدرجة أغمق قليلاً */
-    transform: scale(1.05);    /* تكبير الزر بنسبة بسيطة جداً */
+    background-color: #ee626b; 
+    transform: scale(1.05);    
 }
 
-/* صفحة التواصل */
+
 .contact-header {
-    /* تدرج لوني من البنفسجي الغامق للفاتح كما في الصورة */
     background:#5a36e8;
     padding: 120px 0 100px;
     text-align: center;
     color: white;
-    /* عمل المنحنى في الزاوية السفلية اليمنى */
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px; 
     margin-bottom: 100px;
@@ -186,22 +176,21 @@ body{
     line-height: 1.6;
 }
 
-/* تنسيق بسيط للفورم تحتها */
+
 .contact-form-section {
     padding-bottom: 100px;
 }
-/* هنا صح */
-/* تنسيق قسم الفورم */
+
 .contact-section {
     padding: 0 20px 100px;
-    margin-top: -50px; /* عشان الفورم يطلع شوية فوق الهيدر المنحني بشكل شيك */;
+    margin-top: -50px; 
 }
 
 .contact-section .container {
     background: #5a36e8;
     padding: 40px;
     border-radius: 25px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1); /* ظل خفيف عشان يبرز */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1); 
     max-width: 500px;
     margin: 0 auto;
 }
@@ -219,31 +208,28 @@ body{
     font-weight: 500;
 } 
 
-/* تنسيق الحقول */
 #contact-form {
-    display: flex;         /* هنستخدم flex عشان التحكم أسهل */
-    flex-direction: column; /* ده اللي بيخليهم تحت بعض بالترتيب */
-    gap: 15px;             /* مسافة بين كل خانة والتانية */
+    display: flex;         
+    flex-direction: column; 
+    gap: 15px;             
 }
 
 #contact-form input, 
 #contact-form textarea {
     box-sizing: border-box;
-    background-color: #f0f0f0; /* خلفية فاتحة مريحة للعين */
-    color: #333; /* لون نص غامق */
+    background-color: #f0f0f0; 
+    color: #333; 
     border: none;
     padding: 15px 20px;
     border-radius: 25px;
     font-size: 14px;
 }
 
-/* التيكست أريا والزرار ياخدوا العرض كامل */
 #contact-form textarea, 
 #contact-form button {
     grid-column: span 2;
 }
 
-/* عشان نغير لون النص التوضيحي (Placeholder) */
 #contact-form input::placeholder, 
 #contact-form textarea::placeholder {
     color:black; 
@@ -257,7 +243,7 @@ body{
 }
 
 #contact-form button {
-    background-color: #ee626b; /* اللون الأحمر المميز بتاعك */
+    background-color: #ee626b; 
     color: white;
     border-radius: 20px;
     border: 1px;
@@ -267,17 +253,16 @@ body{
     letter-spacing: 1px;
     transition: 0.4s;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(238, 98, 107, 0.3); /* توهج أحمر خفيف */
+    box-shadow: 0 4px 15px rgba(238, 98, 107, 0.3); 
 }
 
 #contact-form button:hover {
-    background-color: #0071f8; /* يقلب أزرق عند اللمس */
+    background-color: #0071f8; 
     box-shadow: 0 4px 15px rgba(0, 113, 248, 0.4);
     transform: translateY(-2px);
 }
 
 
-/* تظبيط الموبايل */
 @media (max-width: 768px) {
     #contact-form {
         grid-template-columns: 1fr;
@@ -287,8 +272,6 @@ body{
     }
 }
 
-
-/* Hero */
 
 .hero{
     min-height:100vh;
@@ -325,7 +308,6 @@ body{
 
 .hero-text p{
     font-size:18px;
-    /* color: rgb(201, 184, 255); */
     width: 85%;
     font-weight: 400;
     line-height: 1.7;
@@ -375,17 +357,16 @@ body{
 }
 
 
-/* Trending */
 .section-header {
-    display: flex;             /* تفعيل نظام المرونة */
-    justify-content: space-between; /* دفع العناصر لأقصى الطرفين (اليمين واليسار) */
-    align-items: flex-end;     /* محاذاة الزر مع أسفل النص */
-    margin-bottom: 40px;       /* مسافة تحت العنوان */
-    padding: 0 10px;           /* مسافة بسيطة من الأطراف */
+    display: flex;            
+    justify-content: space-between; 
+    align-items: flex-end;     
+    margin-bottom: 40px;       
+    padding: 0 10px;           
 }
 
 .view-all-btn {
-    background-color: #ee626b; /* اللون البرتقالي المائل للأحمر */
+    background-color: #ee626b; 
     color: white;
     text-decoration: none;
     padding: 12px 30px;
@@ -393,13 +374,13 @@ body{
     font-weight: bold;
     font-size: 14px;
     transition: 0.3s;
-    white-space: nowrap;      /* منع انقسام النص في الزر */
+    white-space: nowrap;      
 }
 
 
 .view-all-btn:hover {
     background-color: #f3603b;
-    transform: scale(1.05);    /* تكبير بسيط عند التمرير */
+    transform: scale(1.05);    
 }
 
 
@@ -525,10 +506,9 @@ body{
     color: white;
 }
 
-/* شبكة التصنيفات */
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 أعمدة متساوية */
+    grid-template-columns: repeat(5, 1fr); 
     gap: 20px;
     margin-bottom: 60px;
     box-shadow: #0071f8;
@@ -545,7 +525,7 @@ body{
 }
 
 .cat-header {
-    background-color: #5a36e8; /* اللون البنفسجي للعنوان العلوي */
+    background-color: #5a36e8; 
     color: white;
     padding: 10px;
     font-weight: bold;
@@ -555,14 +535,13 @@ body{
 .cat-thumb img {
     width: 100%;
     height: 150px;
-    object-fit: cover; /* لضمان عدم تشوه الصورة */
+    object-fit: cover; 
     display: block;
     transition: transform 0.4s;
 }
 
-/* صندوق الترحيب التفاعلي */
 .welcome-back-bar {
-    background: linear-gradient(to right, #5a36e8, #f3603b); /* تدرج من البنفسجي للبرتقالي */
+    background: linear-gradient(to right, #5a36e8, #f3603b); 
     display: inline-block;
     padding: 15px 40px;
     border-radius: 35px;
@@ -575,7 +554,6 @@ body{
     margin-right: 10px;
 }
 
-/* تجاوب الشاشات */
 @media (max-width: 992px) {
     .categories-grid { grid-template-columns: repeat(3, 1fr); }
 }
@@ -584,8 +562,6 @@ body{
 }
 
 
-
-/* Footer */
 
 footer{
     background:#333;
@@ -597,7 +573,6 @@ footer{
     border-radius:50px 50px 0 0;
 }
 
-/* Animation */
 
 @keyframes float{
     0%{
@@ -613,7 +588,6 @@ footer{
     }
 }
 
-/* Responsive */
 
 @media(max-width:992px){
 
@@ -664,14 +638,13 @@ footer{
     }
 }
 
-/* فورم تسجسل الدحول */
-/* تعتيم الخلفية عند فتح النافذة */
+
 .login-modal-overlay {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.85); /* تعتيم الخلفية */
-    display: none; /* مخفي في البداية */
+    background: rgba(0, 0, 0, 0.85); 
+    display: none; 
     justify-content: center;
     align-items: center;
     z-index: 2000;
@@ -707,7 +680,7 @@ footer{
 }
 
 .submit-btn {
-    background: #f3603b; /* البرتقالي */
+    background: #f3603b; 
     width: 100%; padding: 12px;
     border-radius: 25px; 
     border: 1px solid;
@@ -719,7 +692,6 @@ footer{
 .submit-btn:hover {
  background:#0071f8;
 }
-/* زر الإغلاق (X) */
 .close-modal {
     position: absolute;
     top: 15px;
@@ -730,8 +702,6 @@ footer{
 }
 
 
-
-/* Most Played */
 
 .most-played{
 
@@ -910,28 +880,26 @@ footer{
 
 @media screen and (max-width: 768px) {
     .hamburger {
-        display: block; /* يظهر في الموبايل بس */
+        display: block;
     }
 
     .nav-links {
-        display: none; /* القائمة تختفي */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 70px;
         left: 0;
         width: 100%;
-        background-color: #1e1e1e; /* نفس لون الناف بار */
+        background-color: #1e1e1e; 
         padding: 20px;
         z-index: 100;
     }
 
-    /* الكلاس ده هيتضاف بالـ JS لما تدوس على الزرار */
     .nav-links.active {
         display: flex;
     }
 }
 
-/* 1. القواعد العامة للمرونة */
 img {
     max-width: 100%;
     height: auto;
@@ -943,12 +911,11 @@ img {
     margin: 0 auto;
 }
 
-/* 2. شاشات التابلت واللاب توب الصغير (أقل من 992px) */
 @media screen and (max-width: 992px) {
     .navbar { padding: 15px 5%; }
     
     .hero {
-        flex-direction: column-reverse; /* الصورة فوق الكلام في الشاشات الصغيرة */
+        flex-direction: column-reverse; 
         text-align: center;
         padding: 50px 20px;
     }
@@ -956,16 +923,14 @@ img {
     .hero-text h1 { font-size: 36px; }
 
     .cards, .played-cards, .categories-grid {
-        grid-template-columns: repeat(2, 1fr); /* كارتين في كل سطر */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 15px;
     }
 }
 
-/* 3. شاشات الموبايل (أقل من 768px) */
 @media screen and (max-width: 768px) {
-    /* المنيو (Hamburger) */
     .nav-links {
-        display: none; /* بتختفي وتظهر بالـ JS */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 70px;
@@ -981,7 +946,6 @@ img {
 
     .hamburger { display: block; color: white; cursor: pointer; }
 
-    /* الهيرو والبحث */
     .data-search {
         flex-direction: column;
         width: 100%;
@@ -992,7 +956,6 @@ img {
         border-radius: 25px;
     }
 
-    /* الكروت: كارت واحد في كل سطر للموبايل */
     .cards, .played-cards, .categories-grid {
         grid-template-columns: 1fr;
     }
@@ -1002,7 +965,6 @@ img {
         gap: 20px;
     }
 
-    /* صفحة الـ Contact */
     .contact-header h1 { font-size: 32px; }
     
     .contact-section .container {
@@ -1011,7 +973,6 @@ img {
     }
 }
 
-/* 4. شاشات الموبايل الصغيرة جداً (أقل من 480px) */
 @media screen and (max-width: 480px) {
     .hero-text h1 { font-size: 28px; }
     
@@ -1070,7 +1031,6 @@ height: auto;
 border-radius: 10%;
 }
 
-/* تنسيق الحاوية الرئيسية للنموذج وتوسيطها */
 .unique-contact-section {
     display: flex;
     justify-content: center;
@@ -1082,13 +1042,12 @@ border-radius: 10%;
 .unique-contact-card {
     width: 100%;
     max-width: 400px;
-    background-color: #12131a; /* خلفية داكنة مريحة للعين */
+    background-color: #12131a; 
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* تنسيق العنوان */
 .unique-contact-title {
     color: #ffffff;
     font-size: 24px;
@@ -1098,18 +1057,16 @@ border-radius: 10%;
     text-align: left;
 }
 
-/* تنسيق مجموعات الإدخال */
 .unique-input-group {
     margin-bottom: 15px;
 }
 
-/* تنسيق الحقول النصية وحقل البريد والرسالة */
 .unique-contact-form input[type="text"],
 .unique-contact-form input[type="email"],
 .unique-contact-form textarea {
     width: 100%;
     padding: 12px;
-    background-color: #1a1c24; /* لون حقول داكن يتناسب مع الخلفية */
+    background-color: #1a1c24; 
     border: 1px solid #2d313f;
     border-radius: 6px;
     color: #ffffff;
@@ -1118,14 +1075,12 @@ border-radius: 10%;
     transition: all 0.3s ease;
 }
 
-/* تحديد أبعاد حقل الرسالة ومنع التمدد العشوائي */
 .unique-contact-form textarea {
     resize: none;
     height: 100px;
 }
 }
 
-/* تأثيرات الإضاءة البنفسجية عند الضغط على الحقول */
 .unique-contact-form input:focus,
 .unique-contact-form textarea:focus {
     outline: none;
@@ -1133,7 +1088,6 @@ border-radius: 10%;
     box-shadow: 0 0 8px rgba(99, 102, 241, 0.4);
 }
 
-/* تنسيق زر الإرسال البنفسجي */
 .unique-send-btn {
     width: 100%;
     padding: 12px;
@@ -1147,7 +1101,6 @@ border-radius: 10%;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-/* تأثير التمرير والضغط على زر الإرسال */
 .unique-send-btn:hover {
     background-color: #4344d7;
 }
@@ -1156,7 +1109,6 @@ border-radius: 10%;
     transform: scale(0.98);
 }
 
-/* التنسيقات الأساسية لتنظيم وترتيب حقول النموذج تحت بعضها */
 .unique-contact-section {
     display: flex;
     justify-content: center;
@@ -1182,29 +1134,25 @@ border-radius: 10%;
     width: 100%;
 }
 
-/* إصلاح نهائي لعرض وخلفية حقول الإدخال */
 .unique-contact-form input,
 .unique-contact-form textarea {
     width: 100% !important;
     padding: 12px !important;
     margin-bottom: 15px !important;
-    background-color: #1a1c24 !important; /* الخلفية الداكنة */
+    background-color: #1a1c24 !important; 
     border: 1px solid #2d313f !important;
     border-radius: 6px !important;
-    color: #ffffff !important; /* لون الكتابة أبيض */
+    color: #ffffff !important; 
     font-size: 15px !important;
     box-sizing: border-box !important;
 }
 
-/* منع تمدد حقل الرسالة وتحديد طوله */
 .unique-contact-form textarea {
     resize: none !important;
     height: 100px !important;
 }
 
-/* --- كود إصلاح خلفية اللوجو والهيدر لمشروع مريم --- */
 
-/* 1. إجبار اللوجو على التخلص من الخلفية السوداء والاندماج مع الخلفية الزرقاء */
 header img, 
 .navbar-brand img, 
 .logo img, 
@@ -1214,7 +1162,6 @@ div img[src*="lugx"] {
     background: none !important;
 }
 
-/* 2. إزالة أي خلفية سوداء قد تكون موجودة حول صندوق اللوجو */
 .logo, 
 .logo-container, 
 .navbar-brand, 
@@ -1223,39 +1170,34 @@ header div:first-child {
     background: none !important;
 }
 
-/* 3. توحيد لون الهيدر بالكامل ليكون بلون واحد (الأزرق/المنفسجي الظاهر في صورتك) */
 header, 
 .header-area, 
 .navbar, 
 .main-nav {
-    background-color: #1f2129 !important; /* هذا لون داكن متناسق، يمكنك تغييره للون الذي تفضلينه */
+    background-color: #1f2129 !important; 
 }
 
-/* إلغاء أي هوامش سفلية زائدة في الفوتر */
 footer, .footer-area {
     margin-bottom: 0 !important;
-    padding-bottom: 30px !important; /* يمكنكِ تقليل هذا الرقم (مثلاً لـ 20px) لتقريب الفوتر من الحافة السفلية تماماً */
+    padding-bottom: 30px !important; 
 }
 
-/* إلغاء الهوامش التلقائية لآخر عنصر داخل الفوتر (مثل نصوص حقوق النشر) */
 footer p, .footer-area p, footer div:last-child {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
 
-/* تنسيق الحاوية البنفسجية الكبيرة */
 .contact-card {
-    background-color: #5c6bc0; /* نفس اللون البنفسجي لبطاقتك */
-    max-width: 500px; /* تحديد عرض مناسب للبطاقة */
-    margin: 40px auto; /* لتوسيط البطاقة في منتصف الصفحة */
+    background-color: #5c6bc0; 
+    max-width: 500px; 
+    margin: 40px auto; 
     padding: 30px;
-    border-radius: 20px; /* جعل الحواف دائرية ونعامة */
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2); /* إضافة ظل خفيف */
+    border-radius: 20px; 
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2); 
     color: white;
     font-family: sans-serif;
 }
 
-/* العناوين داخل البطاقة */
 .contact-card h2 {
     font-size: 2rem;
     margin-bottom: 5px;
@@ -1269,48 +1211,43 @@ footer p, .footer-area p, footer div:last-child {
     opacity: 0.9;
 }
 
-/* ترتيب الحقول تحت بعضها بشكل عمودي */
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* مسافة ثابتة وممتازة بين كل حقل والتاني */
+    gap: 15px; 
 }
 
-/* تنسيق الحقل الواحد (اسم الحقل + صندوق الإدخال) */
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 5px; /* مسافة صغيرة بين كلمة Name والصندوق نفسه */
-    text-align: left; /* لتبدأ الكتابة من اليسار */
+    gap: 5px; 
+    text-align: left; 
 }
 
-/* تنسيق صناديق الإدخال (الاسم والإيميل) والرسالة */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 12px 15px;
-    background-color: #283593; /* لون أزرق غامق متناسق مع الحقول في صورتك */
+    background-color: #283593; 
     border: none;
-    border-radius: 10px; /* جعل زوايا الحقول مستديرة بشكل احترافي */
+    border-radius: 10px; 
     color: white;
     font-size: 1rem;
     outline: none;
-    box-sizing: border-box; /* لضمان عدم خروج الحقول عن أبعاد البطاقة */
+    box-sizing: border-box; 
 }
 
-/* تنسيق الـ placeholder (النصوص المؤقتة داخل الحقول) */
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: #a5b4fc;
 }
 
-/* تنسيق زر الإرسال البرتقالي */
 .submit-btn {
-    background-color: #ff7043; /* نفس الدرجة البرتقالية الجميلة في تصميمك */
+    background-color: #ff7043; 
     color: white;
     padding: 14px;
     border: none;
-    border-radius: 25px; /* جعل حواف الزر دائرية بالكامل */
+    border-radius: 25px; 
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
@@ -1319,10 +1256,9 @@ footer p, .footer-area p, footer div:last-child {
 }
 
 .submit-btn:hover {
-    background-color: #f4511e; /* يغمق قليلاً عند تمرير الماوس */
+    background-color: #f4511e;  
 }
 
-/* ترتيب الحقول والنموذج تحت بعض بشكل عمودي */
 .contact-form {
     display: flex !important;
     flex-direction: column !important;
