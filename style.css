@@ -1201,3 +1201,143 @@ border-radius: 10%;
     resize: none !important;
     height: 100px !important;
 }
+
+/* --- كود إصلاح خلفية اللوجو والهيدر لمشروع مريم --- */
+
+/* 1. إجبار اللوجو على التخلص من الخلفية السوداء والاندماج مع الخلفية الزرقاء */
+header img, 
+.navbar-brand img, 
+.logo img, 
+div img[src*="lugx"] {
+    mix-blend-mode: screen !important;
+    background-color: transparent !important;
+    background: none !important;
+}
+
+/* 2. إزالة أي خلفية سوداء قد تكون موجودة حول صندوق اللوجو */
+.logo, 
+.logo-container, 
+.navbar-brand, 
+header div:first-child {
+    background-color: transparent !important;
+    background: none !important;
+}
+
+/* 3. توحيد لون الهيدر بالكامل ليكون بلون واحد (الأزرق/المنفسجي الظاهر في صورتك) */
+header, 
+.header-area, 
+.navbar, 
+.main-nav {
+    background-color: #1f2129 !important; /* هذا لون داكن متناسق، يمكنك تغييره للون الذي تفضلينه */
+}
+
+/* إلغاء أي هوامش سفلية زائدة في الفوتر */
+footer, .footer-area {
+    margin-bottom: 0 !important;
+    padding-bottom: 30px !important; /* يمكنكِ تقليل هذا الرقم (مثلاً لـ 20px) لتقريب الفوتر من الحافة السفلية تماماً */
+}
+
+/* إلغاء الهوامش التلقائية لآخر عنصر داخل الفوتر (مثل نصوص حقوق النشر) */
+footer p, .footer-area p, footer div:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* تنسيق الحاوية البنفسجية الكبيرة */
+.contact-card {
+    background-color: #5c6bc0; /* نفس اللون البنفسجي لبطاقتك */
+    max-width: 500px; /* تحديد عرض مناسب للبطاقة */
+    margin: 40px auto; /* لتوسيط البطاقة في منتصف الصفحة */
+    padding: 30px;
+    border-radius: 20px; /* جعل الحواف دائرية ونعامة */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2); /* إضافة ظل خفيف */
+    color: white;
+    font-family: sans-serif;
+}
+
+/* العناوين داخل البطاقة */
+.contact-card h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.contact-card p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+/* ترتيب الحقول تحت بعضها بشكل عمودي */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* مسافة ثابتة وممتازة بين كل حقل والتاني */
+}
+
+/* تنسيق الحقل الواحد (اسم الحقل + صندوق الإدخال) */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* مسافة صغيرة بين كلمة Name والصندوق نفسه */
+    text-align: left; /* لتبدأ الكتابة من اليسار */
+}
+
+/* تنسيق صناديق الإدخال (الاسم والإيميل) والرسالة */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #283593; /* لون أزرق غامق متناسق مع الحقول في صورتك */
+    border: none;
+    border-radius: 10px; /* جعل زوايا الحقول مستديرة بشكل احترافي */
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box; /* لضمان عدم خروج الحقول عن أبعاد البطاقة */
+}
+
+/* تنسيق الـ placeholder (النصوص المؤقتة داخل الحقول) */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #a5b4fc;
+}
+
+/* تنسيق زر الإرسال البرتقالي */
+.submit-btn {
+    background-color: #ff7043; /* نفس الدرجة البرتقالية الجميلة في تصميمك */
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 25px; /* جعل حواف الزر دائرية بالكامل */
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #f4511e; /* يغمق قليلاً عند تمرير الماوس */
+}
+
+/* ترتيب الحقول والنموذج تحت بعض بشكل عمودي */
+.contact-form {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100% !important;
+}
+
